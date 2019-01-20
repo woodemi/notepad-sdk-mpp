@@ -12,18 +12,14 @@
 		6DF25E4D21F33FE8009E73CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF25E4B21F33FE8009E73CE /* Main.storyboard */; };
 		6DF25E4F21F33FEA009E73CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DF25E4E21F33FEA009E73CE /* Assets.xcassets */; };
 		6DF25E5221F33FEA009E73CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DF25E5021F33FEA009E73CE /* LaunchScreen.storyboard */; };
-		6DF25E5D21F33FEA009E73CE /* NotepadKitSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF25E5C21F33FEA009E73CE /* NotepadKitSampleTests.swift */; };
 		6DF25E6821F33FEA009E73CE /* NotepadKitSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF25E6721F33FEA009E73CE /* NotepadKitSampleUITests.swift */; };
+		6DF25E8321F50ADA009E73CE /* NotepadKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF25E7A21F50AD9009E73CE /* NotepadKit.framework */; };
+		6DF25E8A21F50ADA009E73CE /* NotepadKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DF25E8921F50ADA009E73CE /* NotepadKitTests.swift */; };
+		6DF25E8F21F50ADA009E73CE /* NotepadKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF25E7A21F50AD9009E73CE /* NotepadKit.framework */; };
+		6DF25E9021F50ADA009E73CE /* NotepadKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF25E7A21F50AD9009E73CE /* NotepadKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6DF25E5921F33FEA009E73CE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6DF25E3C21F33FE8009E73CE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6DF25E4321F33FE8009E73CE;
-			remoteInfo = NotepadKitSample;
-		};
 		6DF25E6421F33FEA009E73CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6DF25E3C21F33FE8009E73CE /* Project object */;
@@ -31,9 +27,46 @@
 			remoteGlobalIDString = 6DF25E4321F33FE8009E73CE;
 			remoteInfo = NotepadKitSample;
 		};
+		6DF25E8421F50ADA009E73CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DF25E3C21F33FE8009E73CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DF25E7921F50AD9009E73CE;
+			remoteInfo = NotepadKit;
+		};
+		6DF25E8621F50ADA009E73CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DF25E3C21F33FE8009E73CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DF25E4321F33FE8009E73CE;
+			remoteInfo = NotepadKitSample;
+		};
+		6DF25E8D21F50ADA009E73CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DF25E3C21F33FE8009E73CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DF25E7921F50AD9009E73CE;
+			remoteInfo = NotepadKit;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6DF25E9421F50ADA009E73CE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6DF25E9021F50ADA009E73CE /* NotepadKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6D21194E21F50CA200F71BA5 /* Sample.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sample.kt; sourceTree = "<group>"; };
+		6D21195521F5218F00F71BA5 /* SampleIos.kt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SampleIos.kt; sourceTree = "<group>"; };
 		6DF25E4421F33FE8009E73CE /* NotepadKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotepadKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DF25E4721F33FE8009E73CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DF25E4921F33FE8009E73CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -41,12 +74,13 @@
 		6DF25E4E21F33FEA009E73CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6DF25E5121F33FEA009E73CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DF25E5321F33FEA009E73CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6DF25E5821F33FEA009E73CE /* NotepadKitSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotepadKitSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DF25E5C21F33FEA009E73CE /* NotepadKitSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotepadKitSampleTests.swift; sourceTree = "<group>"; };
-		6DF25E5E21F33FEA009E73CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DF25E6321F33FEA009E73CE /* NotepadKitSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotepadKitSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DF25E6721F33FEA009E73CE /* NotepadKitSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotepadKitSampleUITests.swift; sourceTree = "<group>"; };
 		6DF25E6921F33FEA009E73CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DF25E7A21F50AD9009E73CE /* NotepadKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NotepadKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DF25E8221F50AD9009E73CE /* NotepadKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotepadKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DF25E8921F50ADA009E73CE /* NotepadKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotepadKitTests.swift; sourceTree = "<group>"; };
+		6DF25E8B21F50ADA009E73CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,13 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6DF25E5521F33FEA009E73CE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				6DF25E8F21F50ADA009E73CE /* NotepadKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,14 +99,82 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6DF25E7F21F50AD9009E73CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF25E8321F50ADA009E73CE /* NotepadKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D21194A21F50C1500F71BA5 /* NotepadKit */ = {
+			isa = PBXGroup;
+			children = (
+				6D21194B21F50CA200F71BA5 /* commonMain */,
+				6D21195221F5218F00F71BA5 /* iosMain */,
+			);
+			name = NotepadKit;
+			sourceTree = "<group>";
+		};
+		6D21194B21F50CA200F71BA5 /* commonMain */ = {
+			isa = PBXGroup;
+			children = (
+				6D21194C21F50CA200F71BA5 /* kotlin */,
+			);
+			name = commonMain;
+			path = ../notepadSdk/src/commonMain;
+			sourceTree = "<group>";
+		};
+		6D21194C21F50CA200F71BA5 /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				6D21194D21F50CA200F71BA5 /* sample */,
+			);
+			path = kotlin;
+			sourceTree = "<group>";
+		};
+		6D21194D21F50CA200F71BA5 /* sample */ = {
+			isa = PBXGroup;
+			children = (
+				6D21194E21F50CA200F71BA5 /* Sample.kt */,
+			);
+			path = sample;
+			sourceTree = "<group>";
+		};
+		6D21195221F5218F00F71BA5 /* iosMain */ = {
+			isa = PBXGroup;
+			children = (
+				6D21195321F5218F00F71BA5 /* kotlin */,
+			);
+			name = iosMain;
+			path = ../notepadSdk/src/iosMain;
+			sourceTree = "<group>";
+		};
+		6D21195321F5218F00F71BA5 /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				6D21195421F5218F00F71BA5 /* sample */,
+			);
+			path = kotlin;
+			sourceTree = "<group>";
+		};
+		6D21195421F5218F00F71BA5 /* sample */ = {
+			isa = PBXGroup;
+			children = (
+				6D21195521F5218F00F71BA5 /* SampleIos.kt */,
+			);
+			path = sample;
+			sourceTree = "<group>";
+		};
 		6DF25E3B21F33FE8009E73CE = {
 			isa = PBXGroup;
 			children = (
+				6D21194A21F50C1500F71BA5 /* NotepadKit */,
+				6DF25E8821F50ADA009E73CE /* NotepadKitTests */,
 				6DF25E4621F33FE8009E73CE /* NotepadKitSample */,
-				6DF25E5B21F33FEA009E73CE /* NotepadKitSampleTests */,
 				6DF25E6621F33FEA009E73CE /* NotepadKitSampleUITests */,
 				6DF25E4521F33FE8009E73CE /* Products */,
 			);
@@ -88,8 +184,9 @@
 			isa = PBXGroup;
 			children = (
 				6DF25E4421F33FE8009E73CE /* NotepadKitSample.app */,
-				6DF25E5821F33FEA009E73CE /* NotepadKitSampleTests.xctest */,
 				6DF25E6321F33FEA009E73CE /* NotepadKitSampleUITests.xctest */,
+				6DF25E7A21F50AD9009E73CE /* NotepadKit.framework */,
+				6DF25E8221F50AD9009E73CE /* NotepadKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,15 +204,6 @@
 			path = NotepadKitSample;
 			sourceTree = "<group>";
 		};
-		6DF25E5B21F33FEA009E73CE /* NotepadKitSampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				6DF25E5C21F33FEA009E73CE /* NotepadKitSampleTests.swift */,
-				6DF25E5E21F33FEA009E73CE /* Info.plist */,
-			);
-			path = NotepadKitSampleTests;
-			sourceTree = "<group>";
-		};
 		6DF25E6621F33FEA009E73CE /* NotepadKitSampleUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +211,15 @@
 				6DF25E6921F33FEA009E73CE /* Info.plist */,
 			);
 			path = NotepadKitSampleUITests;
+			sourceTree = "<group>";
+		};
+		6DF25E8821F50ADA009E73CE /* NotepadKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DF25E8921F50ADA009E73CE /* NotepadKitTests.swift */,
+				6DF25E8B21F50ADA009E73CE /* Info.plist */,
+			);
+			path = NotepadKitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,33 +232,17 @@
 				6DF25E4021F33FE8009E73CE /* Sources */,
 				6DF25E4121F33FE8009E73CE /* Frameworks */,
 				6DF25E4221F33FE8009E73CE /* Resources */,
+				6DF25E9421F50ADA009E73CE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6DF25E8E21F50ADA009E73CE /* PBXTargetDependency */,
 			);
 			name = NotepadKitSample;
 			productName = NotepadKitSample;
 			productReference = 6DF25E4421F33FE8009E73CE /* NotepadKitSample.app */;
 			productType = "com.apple.product-type.application";
-		};
-		6DF25E5721F33FEA009E73CE /* NotepadKitSampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6DF25E6F21F33FEA009E73CE /* Build configuration list for PBXNativeTarget "NotepadKitSampleTests" */;
-			buildPhases = (
-				6DF25E5421F33FEA009E73CE /* Sources */,
-				6DF25E5521F33FEA009E73CE /* Frameworks */,
-				6DF25E5621F33FEA009E73CE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6DF25E5A21F33FEA009E73CE /* PBXTargetDependency */,
-			);
-			name = NotepadKitSampleTests;
-			productName = NotepadKitSampleTests;
-			productReference = 6DF25E5821F33FEA009E73CE /* NotepadKitSampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		6DF25E6221F33FEA009E73CE /* NotepadKitSampleUITests */ = {
 			isa = PBXNativeTarget;
@@ -181,6 +262,40 @@
 			productReference = 6DF25E6321F33FEA009E73CE /* NotepadKitSampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		6DF25E7921F50AD9009E73CE /* NotepadKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DF25E9121F50ADA009E73CE /* Build configuration list for PBXNativeTarget "NotepadKit" */;
+			buildPhases = (
+				6D21195121F50CE000F71BA5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotepadKit;
+			productName = NotepadKit;
+			productReference = 6DF25E7A21F50AD9009E73CE /* NotepadKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6DF25E8121F50AD9009E73CE /* NotepadKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DF25E9521F50ADA009E73CE /* Build configuration list for PBXNativeTarget "NotepadKitTests" */;
+			buildPhases = (
+				6DF25E7E21F50AD9009E73CE /* Sources */,
+				6DF25E7F21F50AD9009E73CE /* Frameworks */,
+				6DF25E8021F50AD9009E73CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DF25E8521F50ADA009E73CE /* PBXTargetDependency */,
+				6DF25E8721F50ADA009E73CE /* PBXTargetDependency */,
+			);
+			name = NotepadKitTests;
+			productName = NotepadKitTests;
+			productReference = 6DF25E8221F50AD9009E73CE /* NotepadKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -194,11 +309,14 @@
 					6DF25E4321F33FE8009E73CE = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					6DF25E5721F33FEA009E73CE = {
+					6DF25E6221F33FEA009E73CE = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 6DF25E4321F33FE8009E73CE;
 					};
-					6DF25E6221F33FEA009E73CE = {
+					6DF25E7921F50AD9009E73CE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					6DF25E8121F50AD9009E73CE = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 6DF25E4321F33FE8009E73CE;
 					};
@@ -217,8 +335,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				6DF25E7921F50AD9009E73CE /* NotepadKit */,
+				6DF25E8121F50AD9009E73CE /* NotepadKitTests */,
 				6DF25E4321F33FE8009E73CE /* NotepadKitSample */,
-				6DF25E5721F33FEA009E73CE /* NotepadKitSampleTests */,
 				6DF25E6221F33FEA009E73CE /* NotepadKitSampleUITests */,
 			);
 		};
@@ -235,13 +354,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6DF25E5621F33FEA009E73CE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6DF25E6121F33FEA009E73CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -249,7 +361,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6DF25E8021F50AD9009E73CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D21195121F50CE000F71BA5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/../gradlew\" -p \"$SRCROOT/../notepadSdk\" copyFramework \\\n-Pconfiguration.build.dir=\"$CONFIGURATION_BUILD_DIR\"          \\\n-Pkotlin.build.type=\"$KOTLIN_BUILD_TYPE\"                      \\\n-Pkotlin.target=\"$KOTLIN_TARGET\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6DF25E4021F33FE8009E73CE /* Sources */ = {
@@ -261,14 +400,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6DF25E5421F33FEA009E73CE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6DF25E5D21F33FEA009E73CE /* NotepadKitSampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6DF25E5F21F33FEA009E73CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -277,18 +408,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6DF25E7E21F50AD9009E73CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF25E8A21F50ADA009E73CE /* NotepadKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6DF25E5A21F33FEA009E73CE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6DF25E4321F33FE8009E73CE /* NotepadKitSample */;
-			targetProxy = 6DF25E5921F33FEA009E73CE /* PBXContainerItemProxy */;
-		};
 		6DF25E6521F33FEA009E73CE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6DF25E4321F33FE8009E73CE /* NotepadKitSample */;
 			targetProxy = 6DF25E6421F33FEA009E73CE /* PBXContainerItemProxy */;
+		};
+		6DF25E8521F50ADA009E73CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DF25E7921F50AD9009E73CE /* NotepadKit */;
+			targetProxy = 6DF25E8421F50ADA009E73CE /* PBXContainerItemProxy */;
+		};
+		6DF25E8721F50ADA009E73CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DF25E4321F33FE8009E73CE /* NotepadKitSample */;
+			targetProxy = 6DF25E8621F50ADA009E73CE /* PBXContainerItemProxy */;
+		};
+		6DF25E8E21F50ADA009E73CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DF25E7921F50AD9009E73CE /* NotepadKit */;
+			targetProxy = 6DF25E8D21F50ADA009E73CE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -466,48 +615,6 @@
 			};
 			name = Release;
 		};
-		6DF25E7021F33FEA009E73CE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4X7TD546UZ;
-				INFOPLIST_FILE = NotepadKitSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.woodemi.notepad.NotepadKitSampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotepadKitSample.app/NotepadKitSample";
-			};
-			name = Debug;
-		};
-		6DF25E7121F33FEA009E73CE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4X7TD546UZ;
-				INFOPLIST_FILE = NotepadKitSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.woodemi.notepad.NotepadKitSampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotepadKitSample.app/NotepadKitSample";
-			};
-			name = Release;
-		};
 		6DF25E7321F33FEA009E73CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -548,6 +655,108 @@
 			};
 			name = Release;
 		};
+		6DF25E9221F50ADA009E73CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4X7TD546UZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				KOTLIN_BUILD_TYPE = DEBUG;
+				KOTLIN_TARGET = "";
+				"KOTLIN_TARGET[sdk=iphoneos*]" = iosArm64;
+				"KOTLIN_TARGET[sdk=iphonesimulator*]" = iosX64;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.woodemi.notepad.NotepadKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6DF25E9321F50ADA009E73CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 4X7TD546UZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				KOTLIN_BUILD_TYPE = RELEASE;
+				KOTLIN_TARGET = "";
+				"KOTLIN_TARGET[sdk=iphoneos*]" = iosArm64;
+				"KOTLIN_TARGET[sdk=iphonesimulator*]" = iosX64;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.woodemi.notepad.NotepadKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6DF25E9621F50ADA009E73CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4X7TD546UZ;
+				INFOPLIST_FILE = NotepadKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.woodemi.notepad.NotepadKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotepadKitSample.app/NotepadKitSample";
+			};
+			name = Debug;
+		};
+		6DF25E9721F50ADA009E73CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4X7TD546UZ;
+				INFOPLIST_FILE = NotepadKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.woodemi.notepad.NotepadKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NotepadKitSample.app/NotepadKitSample";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -569,20 +778,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6DF25E6F21F33FEA009E73CE /* Build configuration list for PBXNativeTarget "NotepadKitSampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6DF25E7021F33FEA009E73CE /* Debug */,
-				6DF25E7121F33FEA009E73CE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		6DF25E7221F33FEA009E73CE /* Build configuration list for PBXNativeTarget "NotepadKitSampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6DF25E7321F33FEA009E73CE /* Debug */,
 				6DF25E7421F33FEA009E73CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DF25E9121F50ADA009E73CE /* Build configuration list for PBXNativeTarget "NotepadKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DF25E9221F50ADA009E73CE /* Debug */,
+				6DF25E9321F50ADA009E73CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DF25E9521F50ADA009E73CE /* Build configuration list for PBXNativeTarget "NotepadKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DF25E9621F50ADA009E73CE /* Debug */,
+				6DF25E9721F50ADA009E73CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

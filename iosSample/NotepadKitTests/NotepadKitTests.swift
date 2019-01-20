@@ -1,15 +1,15 @@
 //
-//  NotepadKitSampleTests.swift
-//  NotepadKitSampleTests
+//  NotepadKitTests.swift
+//  NotepadKitTests
 //
-//  Created by SunbreakWang on 2019/1/19.
+//  Created by SunbreakWang on 2019/1/21.
 //  Copyright © 2019 Woodemi Tech Co., Ltd. All rights reserved.
 //
 
 import XCTest
-@testable import NotepadKitSample
+@testable import NotepadKit
 
-class NotepadKitSampleTests: XCTestCase {
+class NotepadKitTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
