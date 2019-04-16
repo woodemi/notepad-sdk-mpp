@@ -25,6 +25,7 @@ android {
 }
 
 dependencies {
+    implementation("io.woodemi:NotepadKit:0.0.1")
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     implementation(kotlin("stdlib-jdk7", KotlinCompilerVersion.VERSION))
     implementation("com.android.support:appcompat-v7:28.0.0")
